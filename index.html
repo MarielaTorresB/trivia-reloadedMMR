@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trivia Reloaded</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <section id='bienvenida' class=''>
+    <h1 align="center">¡Bienvenidx a Trivia Reloaded!</h1>
+    <h3>Para comenzar a jugar, ingresa tu nombre:</h3>
+    <input type="text" id='input-name' placeholder='Escribe tu nombre aquí'>
+    <button id='button-start'>Enviar</button>
+  </section>
+
+  <section id='main-menu' class='disappear'>
+    <h1 align="center">¡HOLA!</h1>
+    <h2 id='user-name'></h2>
+    <p>Selecciona una opción para comenzar a jugar:</p>
+    <button id='button-art'>ARTE</button>
+    <button id='button-science'>CIENCIAS</button>
+  </section>
+
+  <!--Preguntas de arte-->
+  <section id='show-questions-art' class='disappear'>
+    <h2>¡Trivia de Arte!</h2>
+    <h3>1.¿Qué colores debes mezclar para hacer el color azul?</h3>
+    <select id='form-question1-art'>
+      <option value='A1'>No se puede ese color</option>
+      <option value='A2'>Verde limón y morado</option>
+      <option value='A3'>Turquesa y verde></option>
+      <option value='A4'>Morado y verde azulado</option>
+    </select>
+
+    <h3>2.¿Cómo son conocidos coloquialmente los versos que se crean para el día de muertos?</h3>
+    <select id='form-question2-art'>
+      <option value='B1'>Calaveritas</option>
+      <option value='B2'>Poemas</option>
+      <option value='B3'>Versos de Muertos</option>
+      <option value='B4'>Recital</option>
+    </select>
+
+    <h3>3.¿En qué museo está la mona lisa?</h3>
+    <select id='form-question3-art'>
+      <option value='C1'>Louvre</option>
+      <option value='C2'>Museo del Prado</option>
+      <option value='C3'>Galeria Uffizi</option>
+      <option value='C4'>British Museum</option>
+    </select>
+
+    <h3>4.¿En qué siglo nació Vincent Van Gogh?</h3>
+    <select id='form-question4-art'>
+      <option value='D1'>XIX</option>
+      <option value='D2'>XVIII</option>
+      <option value='D3'>XX</option>
+      <option value='D4'>XVII</option>
+    </select>
+    <br>
+    <br>
+    <button id='button-result-art'>Enviar</button>
+  </section>
+
+  <section id="resultados">
+    <h3 id="results" align="center"></h3>
+  </section>
+
+  <!--preguntas de ciencias-->
+  <section id='show-questions-science' class='disappear'>
+    <h2>¡Trivia de Ciencia!</h2>
+    <h3>1.¿Cuál es la nomenclaura del helio?</h3>
+    <select id='form-question1-science'>
+      <option value='E1'>Ho</option>
+      <option value='E2'>H</option>
+      <option value='E3'>H</option>
+      <option value='E4'>He</option>
+    </select>
+
+    <h3>2.¿A qué especie pertenece la vaquita marina?</h3>
+    <select id='form-question2-science'>
+      <option value="F1">Tiburón</option>
+      <option value="F2">Marlin</option>
+      <option value="F3">Cetáceo</option>
+      <option value="F4">Delfín</option>
+    </select>
+
+    <h3>¿Cuál es la comida favorita de los pandas?</h3>
+    <select id='form-question3-science'>
+      <option value="G1">Salmón</option>
+      <option value="G2">Eucalipto</option>
+      <option value="G3">Bambú</option>
+      <option value="G4">Yerbabuena</option>
+    </select>
+
+    <h3>¿Cúal de estos organelos NO pertenece a las células eucariotas animales?</h3>
+    <select id='form-question4-science'>
+      <option value="H1">Retíículo Endoplasmático</option>
+      <option value="H2">Mitocondria</option>
+      <option value="H3">Núcleo</option>
+      <option value="H4">Cloroplasto</option>
+    </select>
+    <br>
+    <br>
+    <button id='button-result-science'>Enviar</button>
+    <section id="resultados">
+      <h3 id="results" align="center"></h3>
+
+    </section>
+
+    <section id='play-again' class='disappear'>
+      <p>'Tus resultados'</p>
+      <button id='button-play-again'>Nuevo</button>
+    </section>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
